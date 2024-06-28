@@ -4,36 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firma de Correo Electrónico</title>
+    <style>
+        .signature-container {
+            width: 100%;
+            max-width: 600px;
+        }
+        .signature-content {
+            width: 100%;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .column {
+            vertical-align: top;
+        }
+        .info {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .links {
+            text-align: right;
+        }
+        .links a {
+            margin: 0 5px;
+        }
+        .links img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
 </head>
-<body style="margin:0; padding:0; background-color:#e0f1f0;">
-    <table cellpadding="0" cellspacing="0" style="width:100%; max-width:600px; margin:auto; background-color:#e0f1f0; padding:20px;">
+<body style="margin:0; padding:0;">
+    <table cellpadding="0" cellspacing="0" class="signature-container">
         <tr>
-            <td style="padding:10px; background-color:#fff; border-radius:8px; box-shadow:0 2px 4px rgba(0, 0, 0, 0.1);">
-                <table cellpadding="0" cellspacing="0" style="width:100%;">
+            <td>
+                <table cellpadding="0" cellspacing="0" class="signature-content">
                     <tr>
-                        <td style="padding-right:20px; width:100px; vertical-align:top;">
-                            <img src="URL_DE_LA_IMAGEN" alt="Sophie Moore" style="width:100px; height:100px; border-radius:50%;">
+                        <!-- Primera Columna -->
+                        <td class="column" style="width: 27%;">
+                            <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                    <td style="text-align: center; padding-bottom: 10px;">
+                                        <img src="URL_DE_LA_IMAGEN" alt="Sophie Moore" style="width:100px; height:100px; border-radius:50%;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info">
+                                        <p style="font-size:24px; font-weight:600; color:#000;">Sophie Moore</p>
+                                        <p style="font-size:18px; color:#373737;">Marketing Expert</p>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
-                        <td style="font-family: Arial, sans-serif;">
-                            <p style="font-size:24px; font-weight:600; color:#000; margin:0 0 8px 0;">Sophie Moore</p>
-                            <p style="font-size:18px; color:#373737; margin:0;">Marketing Expert</p>
-                        </td>
-                        <td style="text-align:right;">
-                            <img src="URL_DEL_LOGOTIPO" alt="Wortix" style="width:80px; height:auto;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="font-family: Arial, sans-serif; font-size:16px; color:#000; padding-top:10px;">
-                            <p style="margin:5px 0;">(345) 087 - 1239</p>
-                            <p style="margin:5px 0;">sophie.moore@wortix.com</p>
-                            <p style="margin:5px 0;"><a href="http://www.wortix.com" style="text-decoration:none; color:#1A73E8;">www.wortix.com</a></p>
-                        </td>
-                        <td style="text-align:right; vertical-align:bottom; padding-top:10px;">
-                            <a href="https://www.linkedin.com" style="margin:0 5px;"><img src="URL_ICONO_LINKEDIN" alt="LinkedIn" style="width:24px; height:24px;"></a>
-                            <a href="https://www.twitter.com" style="margin:0 5px;"><img src="URL_ICONO_TWITTER" alt="Twitter" style="width:24px; height:24px;"></a>
-                            <a href="https://www.instagram.com" style="margin:0 5px;"><img src="URL_ICONO_INSTAGRAM" alt="Instagram" style="width:24px; height:24px;"></a>
-                            <a href="https://www.facebook.com" style="margin:0 5px;"><img src="URL_ICONO_FACEBOOK" alt="Facebook" style="width:24px; height:24px;"></a>
-                            <a href="https://www.youtube.com" style="margin:0 5px;"><img src="URL_ICONO_YOUTUBE" alt="YouTube" style="width:24px; height:24px;"></a>
+                        <!-- Segunda Columna -->
+                        <td class="column" style="width: 50%;">
+                            <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <img src="URL_DEL_LOGOTIPO" alt="Wortix" style="width:80px; height:auto;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="info" style="font-size:16px; color:#000; padding-top:10px;">
+                                        <p>(345) 087 - 1239</p>
+                                        <p>sophie.moore@wortix.com</p>
+                                        <p><a href="http://www.wortix.com" style="text-decoration:none; color:#1A73E8;">www.wortix.com</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="links" style="padding-top:10px;">
+                                        <a href="https://www.linkedin.com"><img src="URL_ICONO_LINKEDIN" alt="LinkedIn"></a>
+                                        <a href="https://www.twitter.com"><img src="URL_ICONO_TWITTER" alt="Twitter"></a>
+                                        <a href="https://www.instagram.com"><img src="URL_ICONO_INSTAGRAM" alt="Instagram"></a>
+                                        <a href="https://www.facebook.com"><img src="URL_ICONO_FACEBOOK" alt="Facebook"></a>
+                                        <a href="https://www.youtube.com"><img src="URL_ICONO_YOUTUBE" alt="YouTube"></a>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
